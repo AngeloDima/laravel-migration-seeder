@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBooleanTable extends Migration
+class CreatetrainsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateBooleanTable extends Migration
      */
     public function up()
     {
-        Schema::create('boolean', function (Blueprint $table) {
+        Schema::create('trains ', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateBooleanTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('boolean');
+        Schema::dropIfExists('trains');
     }
 }
