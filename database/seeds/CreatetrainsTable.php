@@ -19,20 +19,20 @@ class CreatetrainsTable extends Seeder
         
         for($i = 0; $i < 20; $i++){
 
-            $trains = new Train();
+            $train = new Train();
 
             
-            $trains->azienda = $faker->name();
-            $trains->stazione_partenza = $faker->time();
-            $trains->stazione_arrivo = $faker->time();
+            $train->azienda = $faker->name();
+            $train->stazione_partenza = $faker->time();
+            $train->stazione_arrivo = $faker->time();
 
             
             
-            $trains->orario_partenza = $faker->time();
-            $trains->orario_arrivo = $faker->time();
+            $train->orario_partenza = $faker->time();
+            $train->orario_arrivo = $faker->time();
 
 
-            $trains->save();
+            $train->save();
 
         }
 
