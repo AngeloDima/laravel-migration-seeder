@@ -25,14 +25,16 @@ class CreatetrainsTable extends Seeder
             $train->azienda = $faker->name();
             $train->stazione_partenza = $faker->time();
             $train->stazione_arrivo = $faker->time();
-
-            
-            
             $train->orario_partenza = $faker->time();
             $train->orario_arrivo = $faker->time();
+            $train->codice_treno = $faker->unique();
+            $train->cancellato = $faker->boolean();
+
+            
+            
 
 
-            $train->save();
+            
 
         }
 
